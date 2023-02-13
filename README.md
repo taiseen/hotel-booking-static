@@ -29,6 +29,7 @@ yarn dev
 
 
 ## Learning Context :-
+* vite setup & index configure
 * File & Folder Structure
 * CSS writing structure
 * Responsive Mobile Menu
