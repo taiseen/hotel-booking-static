@@ -24,6 +24,7 @@ yarn dev
 * yarn add -D @headlessui/react
 * yarn add -D spinners-react
 * yarn add -D swiper
+* yarn add -D vite-plugin-svgr
 * yarn add -D tailwindcss postcss autoprefixer
 * npx tailwindcss init -p
 
