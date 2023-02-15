@@ -34,3 +34,4 @@ yarn dev
 * File & Folder Structure
 * CSS writing structure
 * Responsive Mobile Menu
+* Use of react context api
