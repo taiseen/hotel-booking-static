@@ -1,19 +1,25 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Footer, Header, PageNotFound } from './components';
-import { Routes, Route } from 'react-router-dom';
 import { Home, RoomDetails } from './pages';
 
+
 const App = () => {
+
+  const paths = [
+    { path: '/', element: <Home /> },
+    { path: '/room/:id', element: <RoomDetails /> },
+    { path: '*', element: <PageNotFound /> },
+  ]
+
+  const router = createBrowserRouter(paths);
+
 
   return (
     <main className='max-w-[1440px] mx-auto bg-white'>
 
       <Header />
 
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/room/:id' element={<RoomDetails />} />
-        <Route path="*" element={<PageNotFound />} />
-      </Routes>
+      <RouterProvider router={router} />
 
       <Footer />
 
