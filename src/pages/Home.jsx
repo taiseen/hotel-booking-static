@@ -1,4 +1,4 @@
-import { Room } from '../components';
+import { Rooms } from '../components';
 import { LogoDark } from '../assets';
 
 
@@ -7,7 +7,7 @@ const Home = () => {
     <div className='text-2xl text-red-400'>
       Home
       <LogoDark />
-      <Room />
+      <Rooms />
     </div>
   );
 };
