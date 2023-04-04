@@ -1,8 +1,8 @@
 > 11 - Feb - 2023
 
-## Hotel Booking - Static
+# Hotel Booking - Static
 
-# React + Tailwind CSS | [Live Link](www)
+## React + Tailwind CSS | [Live Link](https://hotel-booking-sites.netlify.app)
 
 ## This app based on - vite 
 
@@ -40,4 +40,4 @@ yarn dev
 
 <br />
 
-*  It describes how modules of the system interact with each other...
+* Components calling describe, how modules are interact with each other in the system...
