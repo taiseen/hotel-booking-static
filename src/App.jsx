@@ -15,7 +15,8 @@ const App = () => {
 
 
   return (
-    <main className='max-w-[1440px] mx-auto bg-white'>
+    // max-w-[1440px] mx-auto bg-white
+    <main className=''>
 
       <Header />
 

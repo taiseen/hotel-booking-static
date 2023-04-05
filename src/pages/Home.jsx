@@ -1,12 +1,9 @@
 import { BookForm, HeroSlider, Rooms } from '../components';
-import { LogoDark } from '../assets';
 
 
 const Home = () => {
   return (
-    <div className=''>
-      {/* <LogoDark /> */}
-
+    <div>
       <HeroSlider />
 
       <div className='container mx-auto relative'>
