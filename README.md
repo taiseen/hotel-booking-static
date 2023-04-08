@@ -37,6 +37,7 @@ yarn dev
 * Use of react context api
 * Component Data passing...
 * Using React Date Picker with custom css...
+* Apply swiper slider at hero section
 
 <br />
 
