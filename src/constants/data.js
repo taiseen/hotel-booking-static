@@ -23,19 +23,19 @@ export const sliderData = [
         id: 1,
         title: 'Your Luxury Hotel For Vacation',
         bg: images.Slider1,
-        btnNext: 'Room & Suites',
+        btnNext: 'See our rooms',
     },
     {
         id: 2,
-        title: 'Your Luxury Hotel For Vacation',
+        title: 'Feel Relax & Enjoy Your Luxuriousness',
         bg: images.Slider2,
-        btnNext: 'Room & Suites',
+        btnNext: 'See our rooms',
     },
     {
         id: 3,
         title: 'Your Luxury Hotel For Vacation',
         bg: images.Slider3,
-        btnNext: 'Room & Suites',
+        btnNext: 'See our rooms',
     },
 
 ]

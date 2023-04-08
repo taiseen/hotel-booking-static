@@ -10,6 +10,25 @@
     @apply scroll-smooth scroll-pt-6;
   }
 
+  /* 
+  🟨🟨🟨🟨🟨🟨🟨🟨🟨
+  Browser Main Scrollbar 
+  🟨🟨🟨🟨🟨🟨🟨🟨🟨
+  */
+
+  html::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  html::-webkit-scrollbar-thumb {
+    border-radius   : 2px;
+    background-color: #a37d4c;
+  }
+
+  html::-webkit-scrollbar-track {
+    background-color: #FFFFFF;
+  }
+
   body {
     @apply font-secondary text-primary;
   }
