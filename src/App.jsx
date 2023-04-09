@@ -1,29 +1,35 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, } from 'react-router-dom';
 import { Footer, Header, PageNotFound } from './components';
 import { Home, RoomDetails } from './pages';
 
 
 const App = () => {
 
-  const paths = [
-    { path: '/', element: <Home /> },
-    { path: '/room/:id', element: <RoomDetails /> },
-    { path: '*', element: <PageNotFound /> },
-  ]
+  // const paths = [
+  //   { path: '/', element: <Home /> },
+  //   { path: '/room/:id', element: <RoomDetails /> },
+  //   { path: '*', element: <PageNotFound /> },
+  // ]
 
-  const router = createBrowserRouter(paths);
-
+  // const router = createBrowserRouter(paths);
+  // <RouterProvider router={router} /> 
 
   return (
-    // max-w-[1440px] mx-auto bg-white
+
     <main className=''>
+      <BrowserRouter>
 
-      <Header />
+        <Header />
 
-      <RouterProvider router={router} />
+        <Routes>
+          <Route path={'/'} element={<Home />} />
+          <Route path={'/room/:id'} element={<RoomDetails />} />
+          <Route path={'*'} element={<PageNotFound />} />
+        </Routes>
 
-      <Footer />
+        <Footer />
 
+      </BrowserRouter>
     </main>
   )
 }

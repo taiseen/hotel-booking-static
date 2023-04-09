@@ -22,9 +22,7 @@ export const RoomContext = ({ children }) => {
     // filter rooms based on total persons...
     const filterRooms = roomData.filter(room => total <= room.maxPerson)
     setRooms(filterRooms); // refresh UI with new filtered rooms...
-
   }
-
 
 
   const shareWithChildren = {
@@ -34,6 +32,7 @@ export const RoomContext = ({ children }) => {
     handleCheck,
   };
 
+  
   return (
     <RoomInfo.Provider value={shareWithChildren}>
       {
