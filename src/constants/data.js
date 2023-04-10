@@ -1,3 +1,4 @@
+import { FaCheck } from "react-icons/fa";
 import images from "../assets";
 
 
@@ -37,5 +38,20 @@ export const sliderData = [
         bg: images.Slider3,
         btnNext: 'See our rooms',
     },
+]
 
+
+export const hotelRules = [
+    {
+        rules: 'Check-in : 3:00 PM - 9:00 PM',
+    },
+    {
+        rules: 'Check-out : 10:30 AM',
+    },
+    {
+        rules: 'No Smoking',
+    },
+    {
+        rules: 'No Pet',
+    },
 ]

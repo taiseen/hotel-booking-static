@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Room = ({ room }) => {
 
-  const { id, name, image, size, maxPerson, description, price } = room;
+  const { id, name, image, size, maxPerson, description, price } = room ?? {};
 
   return (
     <div className='bg-white shadow-2xl min-h-[500px] group'>
@@ -48,7 +48,7 @@ const Room = ({ room }) => {
           <h3 className="h3">{name}</h3>
         </Link>
 
-        <p className='max-w-[300px] mx-auto mb-3 lg:mb-6'>{description.slice(0, 56)}</p>
+        <p className='max-w-[300px] mx-auto mb-3 lg:mb-6'>{description.slice(0, 56)}..</p>
       </div>
 
 
@@ -59,7 +59,6 @@ const Room = ({ room }) => {
       >
         Book now from ${price}
       </Link>
-
 
     </div>
   );

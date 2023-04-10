@@ -1,9 +1,12 @@
-import { BookForm, HeroSlider, Rooms } from '../components';
+import { BookForm, HeroSlider, Rooms, ScrollToTop } from '../components';
 
 
 const Home = () => {
+
   return (
     <div>
+      <ScrollToTop />
+
       <HeroSlider />
 
       <div className='container mx-auto relative'>

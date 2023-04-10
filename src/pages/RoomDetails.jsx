@@ -1,12 +1,13 @@
 import { AdultsDropdown, CheckIn, CheckOut, KidsDropdown, ScrollToTop } from '../components';
 import { useRoomContext } from '../context/RoomContext';
+import { hotelRules } from '../constants/data';
 import { useParams } from 'react-router-dom';
 import { FaCheck } from 'react-icons/fa';
 
 
 const RoomDetails = () => {
 
-  const { id } = useParams();
+  const { id } = useParams(); // id get form url (/room/:id) as string...
   const { rooms } = useRoomContext();
 
   const room = rooms.find(room => room.id === +id);
@@ -18,12 +19,15 @@ const RoomDetails = () => {
   const { name, description, facilities, price, imageLg } = room ?? {};
 
   return (
-    <section className=''>
+    <section>
+
+      <ScrollToTop />
 
       <div className='bg-room h-[560px] relative flex justify-center items-center bg-cover bg-center'>
         <div className='absolute w-full h-full bg-black/70' />
         <h1 className='text-6xl text-white z-20 font-primary text-center'>{name} Details</h1>
       </div>
+
 
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row lg:gap-x-8 h-full py-24'>
@@ -58,6 +62,7 @@ const RoomDetails = () => {
           {/* ➡️➡️➡️ right side ➡️➡️➡️ */}
           <div className='w-full lg:w-[40%] h-full'>
 
+            {/* reservation */}
             <div className='py-8 px-6 bg-accent/20 mb-12'>
 
               <div className='flex flex-col space-y-4 mb-4'>
@@ -73,6 +78,23 @@ const RoomDetails = () => {
               </button>
             </div>
 
+            <div>
+              <h3 className='h3'>Hotel Rules</h3>
+              <p className='mb-6 text-justify'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolores iure fugiat eligendi illo est, aperiam quasi distinctio necessitatibus suscipit nemo provident eaque voluptas earum.
+              </p>
+
+              <ul className='flex flex-col gap-y-4'>
+                {
+                  hotelRules.map(({ rules }, idx) =>
+                    <li key={idx} className='flex items-center gap-x-4'>
+                      <FaCheck className='text-accent' />
+                      {rules}
+                    </li>
+                  )
+                }
+              </ul>
+            </div>
 
           </div>
 

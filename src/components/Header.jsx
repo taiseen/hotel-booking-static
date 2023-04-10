@@ -1,10 +1,13 @@
+import { useRoomContext } from '../context/RoomContext';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { LogoWhite } from '../assets'; // SVG Logo
 import { LogoDark } from '../assets'; // SVG Logo
-import { useEffect, useState } from 'react';
 
 
 const Header = () => {
+
+  const { resetRoomFilterData } = useRoomContext();
 
   const [header, setHeader] = useState(false);
 
@@ -27,7 +30,7 @@ const Header = () => {
       <div className='container mx-auto flex flex-col lg:flex-row items-center lg:justify-between gap-y-6 lg:gap-y-0'>
 
         {/* Logo */}
-        <Link to="/">
+        <Link to="/" onClick={resetRoomFilterData}>
           {
             header
               ? <LogoDark className='w-[160px]' /> //<img className='w-[160px]' src={LogoDark} />

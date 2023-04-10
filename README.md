@@ -39,6 +39,9 @@ yarn dev
 * Using React Date Picker with custom css...
 * Apply swiper slider at hero section
 
+<!-- * Data loading spinner effect -->
+<!-- * Scroll To Top Component, when page or location changes -->
+
 <br />
 
 * Components calling describe, how modules are interact with each other in the system...
