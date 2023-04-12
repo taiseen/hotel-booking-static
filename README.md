@@ -38,9 +38,8 @@ yarn dev
 * Component Data passing...
 * Using React Date Picker with custom css...
 * Apply swiper slider at hero section
-
-<!-- * Data loading spinner effect -->
-<!-- * Scroll To Top Component, when page or location changes -->
+* Data loading spinner effect
+* Scroll To Top Component, when page or location changes
 
 <br />
 
